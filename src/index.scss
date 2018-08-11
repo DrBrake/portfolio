@@ -1,0 +1,41 @@
+@import './shared.scss';
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+body {
+    margin: 50px 18px;
+    @include tablet {
+        margin: 50px 21px;
+    }
+}
+
+:global(*) {
+    box-sizing: border-box;
+}
+
+@mixin viewContainer {
+    margin: 45px auto;
+    @include tablet {
+        margin: 50px auto;
+    }
+}
+
+:global(.viewContainer) {
+    @include viewContainer();
+}
+
+:global(.viewContainerGrid) {
+    @include viewContainer();
+    display: flex; // ie fallback for grid
+    justify-content: space-around;
+    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+    max-width: 768px;
+}
