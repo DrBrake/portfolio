@@ -1,0 +1,31 @@
+.container {
+    background-color: #D8D8D8;
+    border-radius: 5px;
+    height: 66px;
+    padding: 7px 10px 10px 10px;
+    color: #7E7E7E;
+    margin: auto;
+    // display: flex;
+    // flex-flow: row wrap;
+    margin-top: 50px;
+    
+    div:first-of-type {
+        padding-bottom: 3px;
+        padding-right: 0;
+        display: block;
+        // flex: 1 100%;
+    }
+
+    > div {
+        padding-right: 10px;
+        display: inline-block;
+    }
+    
+    div:last-of-type {
+        padding-right: 0;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}

@@ -26,6 +26,7 @@ body {
 
 :global(.viewContainer) {
     @include viewContainer();
+    max-width: $max-width;
 }
 
 :global(.viewContainerGrid) {
@@ -38,4 +39,28 @@ body {
     justify-items: center;
     grid-gap: 10px;
     max-width: 768px;
+}
+
+:global(.workTitleContainer) {
+    margin-bottom: 35px;
+}
+
+:global(.workTitle) {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+:global(.workSubtitle) {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+:global(.workPageContainer) {
+    margin-bottom: 30px;
+}
+
+:global(.toolsContainer) {
+    display: flex;
 }

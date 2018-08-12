@@ -1,0 +1,56 @@
+@import '../../shared.scss';
+
+.container {
+
+    display: flex;
+    flex-flow: row wrap;
+
+    @include mobile {
+
+        &.desktopTabletMobile {
+
+        }
+
+        &.allMobileVertical {
+
+        }
+
+        &.allMobileHorizontal {
+
+        }
+
+    }
+
+    @include tablet {
+
+        &.desktopTabletMobile {
+            flex-flow: row nowrap;
+            max-width: 100%;
+        }
+
+        &.allMobileVertical {
+
+        }
+
+        &.allMobileHorizontal {
+
+        }
+
+    }
+
+}
+
+.primaryImageContainer {
+    min-width: 340px;
+    margin-right: 10px;
+}
+
+.secondaryImageContainer {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.tertiaryImage {
+    flex: 1 100%;
+}

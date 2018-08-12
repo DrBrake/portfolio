@@ -7,8 +7,8 @@ export default class Card extends React.Component {
         const { image, text, date, title, onClick } = this.props;
 
         return (
-            <div className={styles.container}>
-                <div className={styles.imageContainer} onClick={() => onClick()}>
+            <div className={styles.container} onClick={() => onClick()}>
+                <div className={styles.imageContainer}>
                     {image}
                 </div>
                 <div className={styles.textContainer}>
