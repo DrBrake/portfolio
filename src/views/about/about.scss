@@ -1,0 +1,23 @@
+@import '../../shared.scss';
+
+.aboutContainer {
+    margin-top: 100px;
+    max-width: 470px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    @include mobile {
+        flex-flow: row nowrap;
+        div:first-of-type {
+            margin-right: 40px;
+        }
+    }
+}
+
+.textContainer {
+    .title {
+        font-weight:bold;
+    }
+}

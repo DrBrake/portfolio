@@ -2,6 +2,7 @@
     "name": "blog",
     "description": "Blog/portfolio thing for design stuff",
     "version": "1.0.0",
+    "license": "ISC",
     "scripts": {
         "start": "cross-env NODE_ENV=development node server.js",
         "bundle": "webpack --config webpack.config.prod.js",
@@ -30,6 +31,7 @@
         "react": "^16.4.2",
         "react-dom": "^16.4.2",
         "react-hot-loader": "^4.3.4",
+        "react-images": "^0.5.19",
         "react-router": "^4.3.1",
         "react-router-dom": "^4.3.1",
         "react-svg-loader": "^2.1.0",

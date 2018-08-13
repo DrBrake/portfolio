@@ -1,54 +1,44 @@
 @import '../../shared.scss';
 
 .container {
-
     display: flex;
     flex-flow: row wrap;
-
-    @include mobile {
-
-        &.desktopTabletMobile {
-
-        }
-
-        &.allMobileVertical {
-
-        }
-
-        &.allMobileHorizontal {
-
-        }
-
+    @include tablet-small {
+        flex-flow: row nowrap;
     }
-
-    @include tablet {
-
-        &.desktopTabletMobile {
-            flex-flow: row nowrap;
-            max-width: 100%;
-        }
-
-        &.allMobileVertical {
-
-        }
-
-        &.allMobileHorizontal {
-
-        }
-
-    }
-
 }
 
 .primaryImageContainer {
-    min-width: 340px;
-    margin-right: 10px;
+    width: 100%;
+    @include tablet {
+        min-width: 340px;
+    }
+}
+
+.imageContainer {
+    width: 100%;
+    @include tablet-small {
+        margin-left: 10px;
+    }
 }
 
 .secondaryImageContainer {
     display: flex;
     flex-flow: row wrap;
     width: 100%;
+    margin-right: 10px;
+    flex: 1 100%;
+}
+
+.tertiaryImageContainer {    
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    margin-right: 10px;
+    flex: 1 100%;
+    :nth-child(2) {
+        margin-left: 10px;
+    }
 }
 
 .tertiaryImage {
