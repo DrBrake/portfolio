@@ -4,12 +4,12 @@ import styles from './card.scss';
 export default class Card extends React.Component {
     render() {
 
-        const { image, text, date, title, onClick } = this.props;
+        const { image, text, date, title, onClick, imageStyle } = this.props;
 
         return (
             <div className={styles.container} onClick={() => onClick()}>
                 <div className={styles.imageContainer}>
-                    {image}
+                    <img className={styles[imageStyle]} src={image}/>
                 </div>
                 <div className={styles.textContainer}>
                     <div className={styles.titleContainer}>
