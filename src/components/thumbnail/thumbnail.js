@@ -7,7 +7,7 @@ export default class Thumbnail extends React.Component {
         const { image, style, onClick } = this.props;
 
         return (
-            <div className={styles.container + ' ' + (style ? styles[style] : '')} onClick={() => onClick()}>
+            <div className={styles.container + ' ' + (style ? styles[style] : '') + ' ' + (image ? '' : styles.noImage)} onClick={() => onClick()}>
                 <img src={image} />
             </div>
         )

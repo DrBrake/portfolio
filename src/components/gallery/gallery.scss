@@ -1,46 +1,20 @@
 @import '../../shared.scss';
 
-.container {
+.imageContainer {
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
-    @include tablet-small {
-        flex-flow: row nowrap;
+    > div:first-of-type {
+        margin-right: 10px;
+    }
+    > div:nth-of-type(2) {
+        margin-right: 10px;
     }
 }
 
 .primaryImageContainer {
     width: 100%;
+    margin-right: 10px;
     @include tablet {
         min-width: 340px;
     }
-}
-
-.imageContainer {
-    width: 100%;
-    @include tablet-small {
-        margin-left: 10px;
-    }
-}
-
-.secondaryImageContainer {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    margin-right: 10px;
-    flex: 1 100%;
-}
-
-.tertiaryImageContainer {    
-    display: flex;
-    flex-flow: row nowrap;
-    width: 100%;
-    margin-right: 10px;
-    flex: 1 100%;
-    :nth-child(2) {
-        margin-left: 10px;
-    }
-}
-
-.tertiaryImage {
-    flex: 1 100%;
 }

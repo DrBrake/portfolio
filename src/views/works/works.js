@@ -17,7 +17,7 @@ export default class Works extends React.Component {
                     date={'06.08.2018'}
                     onClick={() => history.push(ROUTES.BLOGCEPTION)}/>
                 <Card 
-                    image={BABYMETAL_IMAGES.FrontPageDesktop_Babymetal}
+                    image={BABYMETAL_IMAGES.FrontPageTablet_Babymetal}
                     imageStyle={'babymetal'}
                     title={'Babymetal official site concept'}
                     text={'A little redesign for the greatest band of all time.'}

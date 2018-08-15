@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './header.scss';
 
 import { ROUTES } from '../../constans.js';
+import { IMAGES } from '../../images.js';
 
 import { withRouter } from 'react-router-dom';
 
@@ -10,7 +11,7 @@ class Header extends React.Component {
         const { history } = this.props;
         return (
             <div className={styles.headerContainer}>
-                <div className={styles.logo} onClick={() => history.push(ROUTES.WORKS)}></div>
+                <div className={styles.logo} onClick={() => history.push(ROUTES.WORKS)}><img src={IMAGES.Logo}/></div>
                 <div className={styles.subtitle}>
                     <span>UI</span>
                     <span>Graphic design</span>

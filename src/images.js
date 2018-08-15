@@ -2,6 +2,7 @@ import Sketch from '../resources/sketch.png';
 import Illustrator from '../resources/illustrator.png';
 import Photoshop from '../resources/photoshop.png';
 import MSPaint from '../resources/mspaint.png';
+import Logo from '../resources/logo.png';
 
 import BlogceptionThumb from '../resources/blogception/blogception_thumb.png';
 
@@ -34,7 +35,8 @@ export const IMAGES = {
     Sketch,
     Illustrator,
     Photoshop,
-    MSPaint
+    MSPaint,
+    Logo
 }
 
 export const BLOGCEPTION_IMAGES = {
