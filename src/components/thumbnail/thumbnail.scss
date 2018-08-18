@@ -6,7 +6,6 @@
     cursor: pointer;
     margin-bottom: 10px;
     width: 100%;
-    min-width: 240px;
     img {
         width: 100%;
         height: 100%;
@@ -21,15 +20,32 @@
         }
     }
     &.medium {
-        max-width: 160px;
-        min-width: 160px;
+        max-width: 100%;
+        @include tablet-small {
+            max-width: 160px;
+            min-width: 160px;
+        }
         & img {
             object-position: top;
         }
     }
     &.small {
-        max-width: 115px;
-        min-width: 115px;
+        max-width: 100%;
+        @include tablet-small {
+            max-width: 115px;
+            min-width: 115px;
+        }
+        & img {
+            object-position: top;
+        }
+    }
+    &.tiny {
+        max-height: 115px;
+        width: 100%;
+        @include tablet-small {
+            max-width: 115px;
+            min-width: 115px;
+        }
         & img {
             object-position: top;
         }

@@ -3,11 +3,15 @@
 .imageContainer {
     width: 100%;
     display: flex;
-    > div:first-of-type {
-        margin-right: 10px;
+    flex-flow: row wrap;
+    @include tablet-small {
+        flex-flow: row nowrap;
     }
-    > div:nth-of-type(2) {
-        margin-right: 10px;
+    > div:first-of-type {
+        margin-right: 0;
+        @include tablet-small {
+            margin-right: 10px;
+        }
     }
 }
 
@@ -17,4 +21,20 @@
     @include tablet {
         min-width: 340px;
     }
+}
+
+.secondaryImageContainer {
+    display: flex;
+    > div:first-of-type {
+        flex: 1 70%;
+    }
+    > div:nth-of-type(2) {
+        margin-left: 10px;
+        flex: 1 30%;
+    }
+}
+
+.tinyImageContainer {
+    display: flex;
+    flex-flow: column nowrap;
 }

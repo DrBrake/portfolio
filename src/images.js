@@ -3,8 +3,16 @@ import Illustrator from '../resources/illustrator.png';
 import Photoshop from '../resources/photoshop.png';
 import MSPaint from '../resources/mspaint.png';
 import Logo from '../resources/logo.png';
+import BlogceptionThumb from '../resources/blogception_thumb.png';
 
-import BlogceptionThumb from '../resources/blogception/blogception_thumb.png';
+import AboutMobile_Blog from '../resources/blogception/About mobile.png';
+import AboutTablet_Blog from '../resources/blogception/About tablet.png';
+import PopupMobile_Blog from '../resources/blogception/Popup gallery view mobile.png';
+import PopupTablet_Blog from '../resources/blogception/Popup gallery view tablet.png';
+import WorkDetailMobile_Blog from '../resources/blogception/Work - detail view mobile, responsive.png';
+import WorkDetailTablet_Blog from '../resources/blogception/Works details view tablet.png';
+import WorksMobile_Blog from '../resources/blogception/Works mobile.png';
+import WorksTablet_Blog from '../resources/blogception/Works tablet.png';
 
 import FrontPageDesktop_Babymetal from '../resources/babymetal/Frontpage Desktop.png';
 import FrontPageTablet_Babymetal from '../resources/babymetal/Frontpage Tablet.png';
@@ -28,7 +36,7 @@ import DosPrompt_Win95 from '../resources/win95/dos prompt.png';
 import Internet_Win95 from '../resources/win95/internet.png';
 import MainScreen_Win95 from '../resources/win95/main.png';
 import MainScreenMenuOpen_Win95 from '../resources/win95/menu open.png';
-import MyComputer_Win95 from '../resources/win95/my computer open.png';
+import Phone_Win95 from '../resources/win95/phone.png';
 import Solitaire_Win95 from '../resources/win95/Solitaire.png';
 
 export const IMAGES = {
@@ -36,11 +44,19 @@ export const IMAGES = {
     Illustrator,
     Photoshop,
     MSPaint,
-    Logo
+    Logo,
+    BlogceptionThumb
 }
 
 export const BLOGCEPTION_IMAGES = {
-    BlogceptionThumb
+    WorksTablet_Blog,
+    WorksMobile_Blog,
+    WorkDetailMobile_Blog,
+    WorkDetailTablet_Blog,
+    PopupMobile_Blog,
+    PopupTablet_Blog,
+    AboutMobile_Blog,
+    AboutTablet_Blog
 }
 
 export const BABYMETAL_IMAGES = {
@@ -63,11 +79,11 @@ export const BABYMETAL_IMAGES = {
 }
 
 export const WIN95_IMAGES = {
-    BlueScreenOfDeath_Win95,
-    DosPrompt_Win95,
-    Internet_Win95,
     MainScreen_Win95,
     MainScreenMenuOpen_Win95,
-    MyComputer_Win95,
+    Phone_Win95,
+    Internet_Win95,
+    DosPrompt_Win95,
+    BlueScreenOfDeath_Win95,
     Solitaire_Win95
 }

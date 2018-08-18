@@ -4,16 +4,30 @@ import styles from './gallery.scss';
 import { getUniqueKey } from '../../utilities.js';
 
 export default class Gallery extends React.Component {
+    
     render() {
-
-        const { images, style } = this.props;
-
+        const { primaryImage, images, tinyImages, style } = this.props;
         return (
-            <div className={styles.imageContainer + ' ' + (style ? styles[style] : '')}>
-                {images.map((item, index) => {
-                    if (index === 0) return <div className={styles.primaryImageContainer} key={getUniqueKey()}>{item}</div>
-                    else return item
-                })}
+            <div>
+                <div className={styles.imageContainer + ' ' + (style ? styles[style] : '')}>
+                    <div className={styles.primaryImageContainer} key={getUniqueKey()}>{primaryImage}</div>
+                    {images
+                    ?
+                        <div className={styles.secondaryImageContainer}>
+                            {images.map((item, index) => (
+                                item
+                            ))}
+                            {tinyImages
+                            ?
+                                <div className={styles.tinyImageContainer}>
+                                    {tinyImages.map((item, index) => (
+                                        <div key={getUniqueKey()}>{item}</div>
+                                    ))}
+                                </div>
+                            : null}
+                        </div>
+                    : null}
+                </div>
             </div>
         )
     }
