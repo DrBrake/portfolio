@@ -12,12 +12,6 @@ export default class Works extends React.Component {
             <div className={'container'}>
                 <div className={'viewContainerGrid'}>
                     <Card 
-                        image={IMAGES.BlogceptionThumb}
-                        title={'Blogception'}
-                        text={'Designing a design blog design. Zero Inception references beyond this point.'}
-                        date={'18.08.2018'}
-                        onClick={() => history.push(ROUTES.BLOGCEPTION)}/>
-                    <Card 
                         image={BABYMETAL_IMAGES.FrontPageTablet_Babymetal}
                         imageStyle={'babymetal'}
                         title={'Babymetal official site concept'}
@@ -30,6 +24,12 @@ export default class Works extends React.Component {
                         text={'The best operating system, with you wherever you go.'}
                         date={'18.08.2018'}
                         onClick={() => history.push(ROUTES.WIN95)}/>
+                    <Card 
+                        image={IMAGES.BlogceptionThumb}
+                        title={'Blogception'}
+                        text={'Designing a design blog design. Zero Inception references beyond this point.'}
+                        date={'18.08.2018'}
+                        onClick={() => history.push(ROUTES.BLOGCEPTION)}/>
                 </div>
             </div>
         )

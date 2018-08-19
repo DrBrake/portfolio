@@ -10,16 +10,20 @@ class Header extends React.Component {
     render() {
         const { history } = this.props;
         return (
-            <div className={styles.headerContainer}>
-                <div className={styles.logo} onClick={() => history.push(ROUTES.WORKS)}><img src={IMAGES.Logo}/></div>
-                <div className={styles.subtitle}>
-                    <span>UI</span>
-                    <span>Graphic design</span>
-                    <span>UX</span>
+            <div>
+                <div className={styles.headerContainer}>
+                    <div className={styles.bodyContainer}>
+                        <div className={styles.logo} onClick={() => history.push(ROUTES.WORKS)}><img src={IMAGES.Logo}/></div>
+                        <div className={styles.subtitle}>
+                            <span>UI</span>
+                            <span>Graphic design</span>
+                            <span>UX</span>
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.menuContainer}>
-                    <div className={styles.menuTitle} onClick={() => history.push('/')}>Works</div>
-                    <div className={styles.menuTitle} onClick={() => history.push('/about')}>About</div>
+                    <button className={styles.menuTitle} onClick={() => history.push('/')}>Home</button>
+                    <button className={styles.menuTitle + ' ' + styles.right} onClick={() => history.push('/about')}>About</button>
                 </div>
             </div>
         )

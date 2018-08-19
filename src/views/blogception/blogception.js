@@ -43,7 +43,8 @@ export default class Blogception extends React.Component {
                         onClickNext={() => this.setState({ activeImage: this.state.activeImage + 1 })}
                         onClickPrev={() => this.setState({ activeImage: this.state.activeImage - 1 })}
                         onClickThumbnail={(index) => this.setState({ activeImage: index })}
-                        showThumbnails={true}/>
+                        showThumbnails={true}
+                        backdropClosesModal={true}/>
                     <div className={'workTitleContainer'}>
                         <div className={'workTitle'}>
                             Blogception

@@ -1,1 +1,5 @@
 node_modules/
+dist/
+.rnd
+cert.pem
+key.pem
