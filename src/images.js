@@ -50,13 +50,13 @@ export const IMAGES = {
 
 export const BLOGCEPTION_IMAGES = {
     WorksTablet_Blog,
+    WorkDetailTablet_Blog,
+    PopupTablet_Blog,
+    AboutTablet_Blog,
     WorksMobile_Blog,
     WorkDetailMobile_Blog,
-    WorkDetailTablet_Blog,
     PopupMobile_Blog,
-    PopupTablet_Blog,
-    AboutMobile_Blog,
-    AboutTablet_Blog
+    AboutMobile_Blog
 }
 
 export const BABYMETAL_IMAGES = {

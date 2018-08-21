@@ -7,30 +7,38 @@
     @include tablet-small {
         flex-flow: row nowrap;
     }
-    > div:first-of-type {
-        margin-right: 0;
-        @include tablet-small {
-            margin-right: 10px;
-        }
-    }
 }
 
 .primaryImageContainer {
     width: 100%;
-    margin-right: 10px;
+    margin-right: 0;
     @include tablet {
         min-width: 340px;
+    }
+    @include tablet-small {
+        margin-right: 10px;
+    }
+    .onlyImage & {
+        margin-right: 0;
     }
 }
 
 .secondaryImageContainer {
     display: flex;
-    > div:first-of-type {
-        flex: 1 70%;
-    }
+    width: 100%;
     > div:nth-of-type(2) {
         margin-left: 10px;
-        flex: 1 30%;
+    }
+    @include tablet-small {
+        width: initial;
+    }
+    .onlySecondary & {
+        > div {
+            margin-left: 10px;
+        }
+        > div:first-of-type{
+            margin-left: 0;
+        }
     }
 }
 

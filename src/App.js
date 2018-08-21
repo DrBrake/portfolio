@@ -3,6 +3,8 @@ import { Switch, Router } from 'react-router';
 import { Route } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
+require('../favicon.ico');
+
 import Header from './components/header/header.js';
 
 import { Views } from './views';

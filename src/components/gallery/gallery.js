@@ -5,24 +5,35 @@ import { getUniqueKey } from '../../utilities.js';
 
 export default class Gallery extends React.Component {
     
+    getSecondaryImages() {
+        const { images } = this.props;
+        if (images)
+            return images.map((item, index) => ( item ))
+            
+    }
+
+    getTinyImages() {
+        const { tinyImages } = this.props;
+        if (tinyImages)
+            return tinyImages.map((item, index) => ( item ))
+    }
+
     render() {
         const { primaryImage, images, tinyImages, style } = this.props;
         return (
             <div>
-                <div className={styles.imageContainer + ' ' + (style ? styles[style] : '')}>
-                    <div className={styles.primaryImageContainer} key={getUniqueKey()}>{primaryImage}</div>
-                    {images
+                <div className={styles.imageContainer + ' ' + (style ? style.split(',').map(s => styles[s]).join(' ') : '')}>
+                    {primaryImage
+                    ? <div className={styles.primaryImageContainer} key={getUniqueKey()}>{primaryImage}</div>
+                    : null}
+                    {images || tinyImages
                     ?
                         <div className={styles.secondaryImageContainer}>
-                            {images.map((item, index) => (
-                                item
-                            ))}
+                            {this.getSecondaryImages()}
                             {tinyImages
                             ?
                                 <div className={styles.tinyImageContainer}>
-                                    {tinyImages.map((item, index) => (
-                                        <div key={getUniqueKey()}>{item}</div>
-                                    ))}
+                                    {this.getTinyImages()}
                                 </div>
                             : null}
                         </div>

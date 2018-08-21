@@ -69,7 +69,7 @@ export default class Win95Mobile extends React.Component {
                     <div className={'workPageContainer'}>
                         <div className={'workSubtitle'}>The internet / Dos prompt / BSOD</div>
                         <Gallery 
-                            primaryImage={<Thumbnail style='large' key={getUniqueKey()} image={WIN95_IMAGES.Internet_Win95} onClick={() => this.pickLightBoxImage(3)}/>}
+                            primaryImage={<Thumbnail style='large,topMinus60' key={getUniqueKey()} image={WIN95_IMAGES.Internet_Win95} onClick={() => this.pickLightBoxImage(3)}/>}
                             images={[
                                 <Thumbnail style='small' key={getUniqueKey()} image={WIN95_IMAGES.DosPrompt_Win95} onClick={() => this.pickLightBoxImage(4)}/>,
                                 <Thumbnail style='small' key={getUniqueKey()} image={WIN95_IMAGES.BlueScreenOfDeath_Win95} onClick={() => this.pickLightBoxImage(5)}/>
@@ -83,6 +83,7 @@ export default class Win95Mobile extends React.Component {
                         <div className={'workSubtitle'}>And other stuff...</div>
                         <Gallery 
                             primaryImage={<Thumbnail style='large' key={getUniqueKey()} image={WIN95_IMAGES.Solitaire_Win95} onClick={() => this.pickLightBoxImage(6)}/>}
+                            style='onlyImage'
                         />
                         <div>
                             Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.

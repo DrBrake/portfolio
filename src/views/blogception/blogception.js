@@ -56,10 +56,8 @@ export default class Blogception extends React.Component {
                     <div className={'workPageContainer'}>
                         <div className={'workSubtitle'}>Frontpage</div>
                         <Gallery 
-                            primaryImage={<Thumbnail style='large' image={BLOGCEPTION_IMAGES.WorksTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(0)}/>}
-                            images={[
-                                <Thumbnail style='medium' image={BLOGCEPTION_IMAGES.WorksMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(1)}/>
-                            ]}
+                            primaryImage={<Thumbnail style='large,center,topMinus200' image={BLOGCEPTION_IMAGES.WorksTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(0)}/>}
+                            style='onlyImage'
                         />
                         <div>
                             Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
@@ -68,10 +66,8 @@ export default class Blogception extends React.Component {
                     <div className={'workPageContainer'}>
                         <div className={'workSubtitle'}>Detail view</div>
                         <Gallery 
-                            primaryImage={<Thumbnail style='large' image={BLOGCEPTION_IMAGES.WorkDetailTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(2)}/>}
-                            images={[
-                                <Thumbnail style='medium' image={BLOGCEPTION_IMAGES.WorkDetailMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(3)}/>
-                            ]}
+                            primaryImage={<Thumbnail style='large,center,topMinus300' image={BLOGCEPTION_IMAGES.WorkDetailTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(1)}/>}
+                            style='onlyImage'
                             />
                         <div>
                             Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
@@ -80,10 +76,8 @@ export default class Blogception extends React.Component {
                     <div className={'workPageContainer'}>
                         <div className={'workSubtitle'}>Image popup</div>
                         <Gallery 
-                            primaryImage={<Thumbnail style='large' image={BLOGCEPTION_IMAGES.PopupTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(2)}/>}
-                            images={[
-                                <Thumbnail style='medium' image={BLOGCEPTION_IMAGES.PopupMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(3)}/>
-                            ]}
+                            primaryImage={<Thumbnail style='large,center,topMinus200' image={BLOGCEPTION_IMAGES.PopupTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(2)}/>}
+                            style='onlyImage'
                             />
                         <div>
                             Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
@@ -92,10 +86,23 @@ export default class Blogception extends React.Component {
                     <div className={'workPageContainer'}>
                         <div className={'workSubtitle'}>About</div>
                         <Gallery 
-                            primaryImage={<Thumbnail style='large' image={BLOGCEPTION_IMAGES.AboutTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(2)}/>}
+                            primaryImage={<Thumbnail style='large,topMinus200' image={BLOGCEPTION_IMAGES.AboutTablet_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(3)}/>}
+                            style='onlyImage'
+                            />
+                        <div>
+                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        </div>
+                    </div>
+                    <div className={'workPageContainer'}>
+                        <div className={'workSubtitle'}>Mobile</div>
+                        <Gallery 
                             images={[
-                                <Thumbnail style='medium' image={BLOGCEPTION_IMAGES.AboutMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(3)}/>
+                                <Thumbnail style='mediun' image={BLOGCEPTION_IMAGES.WorksMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(4)}/>,
+                                <Thumbnail style='mediun' image={BLOGCEPTION_IMAGES.WorkDetailMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(5)}/>,
+                                <Thumbnail style='mediun' image={BLOGCEPTION_IMAGES.PopupMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(6)}/>,
+                                <Thumbnail style='mediun' image={BLOGCEPTION_IMAGES.AboutMobile_Blog} key={getUniqueKey()} onClick={() => this.pickLightBoxImage(7)}/>
                             ]}
+                            style='onlySecondary'
                             />
                         <div>
                             Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.

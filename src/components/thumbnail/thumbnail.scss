@@ -18,6 +18,32 @@
         & img {
             object-position: top left;
         }
+        &.center {
+            & img {
+                object-position: center;
+            }
+        }
+        &.topMinus60 {
+            & img {
+                @include tablet {
+                    object-position: 0 -60px;
+                }
+            }
+        }
+        &.topMinus200 {
+            & img {
+                @include tablet {
+                    object-position: 0 -200px;
+                }
+            }
+        }
+        &.topMinus300 {
+            & img {
+                @include tablet {
+                    object-position: 0 -300px;
+                }
+            }
+        }
     }
     &.medium {
         max-width: 100%;
