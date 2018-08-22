@@ -49,8 +49,8 @@ export default class Win95Mobile extends React.Component {
                         <div className={'workTitle'}>
                             Windows 95 mobile
                         </div>
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros massa. Vivamus sagittis, libero in ultrices auctor, leo nibh sodales nisl, ut aliquam massa est ac ex. Pellentesque quis augue lorem. Sed eget lorem urna. Ut eu finibus massa. Pellentesque sollicitudin, est nec placerat dictum, felis turpis maximus velit, quis mattis metus enim non nibh. Fusce in enim et ligula dapibus maximus. Morbi eu sem et nibh dictum aliquet.
+                        <div className={'paragraphContainer'}>
+                            <p>This was literally the first idea I had when I decided to start learning UI design. I think it began with the notion that I could use the Start menu as a sort of a burger menu. The tile layout was inspired by the Windows Phone UI.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -62,12 +62,13 @@ export default class Win95Mobile extends React.Component {
                                 <Thumbnail style='small' key={getUniqueKey()} image={WIN95_IMAGES.Phone_Win95} onClick={() => this.pickLightBoxImage(2)}/>
                             ]}
                         />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p><span>Main screen</span> - Easy access to all your favorite Windows applications straight from the customizable main screen. Does anyone actually know what the hell Briefcase is? Yeah, me neither.</p>
+                            <p><span>Phone</span> - Call all your friends and tell them stuff about your day. It's a phone.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
-                        <div className={'workSubtitle'}>The internet / Dos prompt / BSOD</div>
+                        <div className={'workSubtitle'}>The Internet / Dos prompt / BSOD</div>
                         <Gallery 
                             primaryImage={<Thumbnail style='large,topMinus60' key={getUniqueKey()} image={WIN95_IMAGES.Internet_Win95} onClick={() => this.pickLightBoxImage(3)}/>}
                             images={[
@@ -75,8 +76,10 @@ export default class Win95Mobile extends React.Component {
                                 <Thumbnail style='small' key={getUniqueKey()} image={WIN95_IMAGES.BlueScreenOfDeath_Win95} onClick={() => this.pickLightBoxImage(5)}/>
                             ]}
                             />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p><span>The Internet</span> - Responsive web design? Not for another 15 years, friend. In the meantime you can just get used to scrolling. A whole lotta scrolling.</p>
+                            <p><span>Dos prompt</span> - This one's for all you powers users out there who think that all these modern, grey user interfaces are too glamorous. Comes with all your favorite dos commands. Like dir. And the other one.</p>
+                            <p><span>BSOD</span> - Oh, what the hell!</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -85,8 +88,9 @@ export default class Win95Mobile extends React.Component {
                             primaryImage={<Thumbnail style='large' key={getUniqueKey()} image={WIN95_IMAGES.Solitaire_Win95} onClick={() => this.pickLightBoxImage(6)}/>}
                             style='onlyImage'
                         />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p>Honestly, I kinda ran out of ideas of what else to do with this design. I ended up creating a couple views that were essentially just Windows 95, but narrow. Those were not all that interesting, so I decided not to include them. I was also thinking about making some kind of text message view, but couldn't find an interesting Windows 95 angle to it.</p>
+                            <p>That being said, I was pretty happy with how this one turned out. Not too shabby for a first stab at UI design.</p>
                         </div>
                     </div>
                     <div className={'toolsContainer'}>

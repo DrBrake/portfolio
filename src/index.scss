@@ -21,7 +21,7 @@ body {
 }
 
 :global(#router) {
-    padding: 30px 0 50px 0;
+    padding-bottom: 50px;
     background-color: #E0E0E0;
     min-height: 100%;
 }
@@ -76,6 +76,7 @@ body {
 :global(.workSubtitle) {
     font-size: 16px;
     padding-bottom: 10px;
+    font-weight: bold;
 }
 
 :global(.workPageContainer) {
@@ -84,4 +85,18 @@ body {
 
 :global(.toolsContainer) {
     display: flex;
+}
+
+:global(.paragraphContainer) {
+    line-height: 1.4;
+    p {
+        margin-top: 0;
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+:global(.workBottomContainer) {
+    margin-top: 35px;
 }

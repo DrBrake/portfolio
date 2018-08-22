@@ -50,7 +50,7 @@ export default class BabymetalConcept extends React.Component {
                             Babymetal official site concept
                         </div>
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae eros massa. Vivamus sagittis, libero in ultrices auctor, leo nibh sodales nisl, ut aliquam massa est ac ex. Pellentesque quis augue lorem. Sed eget lorem urna. Ut eu finibus massa. Pellentesque sollicitudin, est nec placerat dictum, felis turpis maximus velit, quis mattis metus enim non nibh. Fusce in enim et ligula dapibus maximus. Morbi eu sem et nibh dictum aliquet.
+                            This idea had two origins: my love of Babymetal and my hate for how their current website looks.
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -65,8 +65,9 @@ export default class BabymetalConcept extends React.Component {
                                 <Thumbnail style='tiny' key={getUniqueKey()} image={BABYMETAL_IMAGES.FrontPageMobileMenuOpen_Babymetal} onClick={() => this.pickLightBoxImage(3)}/>
                             ]}
                         />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p>I don't remember when the pink came in, but it was pretty early. It doesn't fully match the official color scheme of the band (black, white and red), but I felt strongly enough that it worked with their aesthetic and what they are about, to keep it in.</p>
+                            <p>The one thing I'm still not perfectly happy with is the tablet design, where the image is cut off by the social links. What I do like, however, is how the menu lines up with the "horns" of the logo on desktop and tablet. I struggled for a bit trying to have it line up with the grid as well. Until I realized that I didn't actually have to do that. The newsbox was the latest addition. Before that there was kind of no point in ever returning to the frontpage.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -78,8 +79,8 @@ export default class BabymetalConcept extends React.Component {
                                 <Thumbnail style='small' key={getUniqueKey()} image={BABYMETAL_IMAGES.BioMobile_Babymetal} onClick={() => this.pickLightBoxImage(6)}/>
                             ]}
                             />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p>With the bio page we start using the official colors. Clicking on individual band member or their names takes you to a profile page (below). I still don't know if the images look clickable enough. At some point I had a box shadow around the entire element, but it just made it look like one big button, instead of three individual ones. The text is the history of the band so far.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -91,8 +92,9 @@ export default class BabymetalConcept extends React.Component {
                                 <Thumbnail style='small' key={getUniqueKey()} image={BABYMETAL_IMAGES.BandMemberMobile_Babymetal} onClick={() => this.pickLightBoxImage(9)}/>
                             ]}
                             />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p>I decided to keep using the same background color for the band member pages, since they are technically sub pages to the main bio page. The small images on the bottom would be pulled straight out of Instagram and would also link there. The text is the bio for the selected member.</p>
+                            <p>I just realized the image doesn't line up with the text on desktop. Burn it all down!</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -104,8 +106,8 @@ export default class BabymetalConcept extends React.Component {
                                 <Thumbnail style='small' key={getUniqueKey()} image={BABYMETAL_IMAGES.DiscogMobile_Babymetal} onClick={() => this.pickLightBoxImage(12)}/>
                             ]}
                             />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p>The album page has a two big buttons that toggle between the track list of the selected album. The most difficulty with this page was naming it. Discography is too long. I had "Discog." for a while but it looked silly. For concept purposes Albums works just fine. I suppose you could call it Releases if you wanted to also include singles and DVDs.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -117,8 +119,9 @@ export default class BabymetalConcept extends React.Component {
                                 <Thumbnail style='small' key={getUniqueKey()} image={BABYMETAL_IMAGES.TourMobile_Babymetal} onClick={() => this.pickLightBoxImage(15)}/>
                             ]}
                             />
-                        <div>
-                            Aenean eget dolor viverra, pulvinar libero in, euismod odio. Nunc eget tortor id velit interdum scelerisque. Donec quis lacinia tellus, sit amet finibus orci. Cras ut libero a augue sollicitudin placerat. Etiam euismod efficitur auctor. Suspendisse id porttitor massa. Sed dictum lorem ut scelerisque ullamcorper. Ut rutrum gravida posuere. Sed fermentum ac nisl sit amet accumsan. Pellentesque dui mauris, egestas et mi eget, pharetra mollis nunc.
+                        <div className={'paragraphContainer'}>
+                            <p>With the tour page I wanted to do a little more than just list where the band was playing. So I added an indication of tour dates that were already in the past (dark background) and dates that were sold out (grey button). Everything else gets a green button. The pins take you to Google maps for the venue.</p>
+                            <p>There's definitely a little bit of cheating going on with this one: what happens if that tablet screen gets any smaller? I also didn't really think about scrolling at the time, but if you put a gun to my head, I would say that only the tour table scrolls. Everything else is static.</p>
                         </div>
                     </div>
                     <div className={'toolsContainer'}>

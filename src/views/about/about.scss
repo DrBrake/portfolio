@@ -18,6 +18,9 @@
 
 .textContainer {
     padding-top: 10px;
+    > div {
+        margin-bottom: 10px;
+    }
     .title {
         font-weight:bold;
     }
