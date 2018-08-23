@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app.js';
+import App from './App.js';
 import { AppContainer } from 'react-hot-loader';
 
 import './index.scss';
@@ -19,7 +19,7 @@ const render = Component => {
 render(App);
 
 if (module.hot) {
-    module.hot.accept('./app.js', () => { 
+    module.hot.accept('./App.js', () => { 
         routerKey++;
         render(App) 
     })
