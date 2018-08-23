@@ -8,9 +8,9 @@ var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
 var helmet = require('helmet');
 
 var sslOptions = {
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem'),
-    passphrase: 'mOHiGB2dDCFft9bX'
+    // key: fs.readFileSync('key.pem'),
+    // cert: fs.readFileSync('cert.pem'),
+    // passphrase: 'mOHiGB2dDCFft9bX'
 }
 
 const isDeveloping = process.env.NODE_ENV === 'development';
@@ -60,7 +60,7 @@ else {
         },
         frameGuard: { action: 'deny' }
     }));
-    app.use(redirectToHTTPS([], [], 301));
+    // app.use(redirectToHTTPS([], [], 301));
     const staticPath = path.join(__dirname, 'dist');
     app.use(express.static(staticPath));
     app.get('*', function(req, res) {
