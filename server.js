@@ -57,7 +57,7 @@ else {
         contentSecurityPolicy: {
             directives: {
                 defaultSrc: ["'self'"],
-                styleSrc: ["'self'", 'https://fonts.googleapis.com', 'https://fonts.gstatic.com', "'sha256-5ieGubxPx4XvxN9UkBcwNn4s5WWNXqo4tINEjUfCm48='"],
+                styleSrc: ["'self'", 'https://fonts.googleapis.com', 'https://fonts.gstatic.com', "'sha256-5ieGubxPx4XvxN9UkBcwNn4s5WWNXqo4tINEjUfCm48='", "'sha256-tQhKwS01F0Bsw/EwspVgMAqfidY8gpn/+DKLIxQ65hg='", "'nonce-nTNgo6MoVzlG3uQF'"],
                 objectSrc: ["'none'"],
                 frameAncestors: ["'none'"],
                 fontSrc: ['https://fonts.gstatic.com']
