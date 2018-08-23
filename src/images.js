@@ -3,6 +3,8 @@ import Illustrator from '../resources/illustrator.png';
 import Photoshop from '../resources/photoshop.png';
 import MSPaint from '../resources/mspaint.png';
 import Logo from '../resources/logo.png';
+import Photo from '../resources/photo.jpg';
+
 import BlogceptionThumb from '../resources/blogception_thumb.png';
 
 import AboutMobile_Blog from '../resources/blogception/About mobile.png';
@@ -45,7 +47,8 @@ export const IMAGES = {
     Photoshop,
     MSPaint,
     Logo,
-    BlogceptionThumb
+    BlogceptionThumb,
+    Photo
 }
 
 export const BLOGCEPTION_IMAGES = {

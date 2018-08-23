@@ -3,13 +3,15 @@ import styles from './about.scss';
 
 import Thumbnail from '../../components/thumbnail/thumbnail.js';
 
+import { IMAGES } from '../../images.js';
+
 export default class About extends React.Component {
     render() {
         return (
             <div className={'container'}>
                 <div className={'viewContainer'}>
                     <div className={styles.aboutContainer}>
-                        <Thumbnail style='photo'/>
+                        <Thumbnail style='photo' image={IMAGES.Photo}/>
                         <div className={styles.textContainer}>
                             <div><span className={styles.title}>Name: </span>Henri Hosio</div>
                             <div><span className={styles.title}>Email: </span>henri.hosio@gmail.com</div>
