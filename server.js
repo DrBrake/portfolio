@@ -4,6 +4,7 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs');
 var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
+var expressStaticGzip = require("express-static-gzip");
 
 var helmet = require('helmet');
 
@@ -67,7 +68,7 @@ else {
     }));
     app.use(redirectToHTTPS([], [], 301));
     const staticPath = path.join(__dirname, 'dist');
-    app.use(express.static(staticPath));
+    app.use(expressStaticGzip(staticPath));
     app.get('*', function(req, res) {
         res.sendFile(staticPath + "/index.html");
     })

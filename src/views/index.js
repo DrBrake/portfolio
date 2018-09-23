@@ -3,6 +3,7 @@ import win95Mobile from './win95-mobile/win95-mobile.js';
 import blogception from './blogception/blogception.js';
 import works from './works/works.js';
 import about from './about/about.js';
+import illuminati from './illuminati/illuminati.js';
 
 export const Views = {
     babymetalConcept,
@@ -10,4 +11,5 @@ export const Views = {
     blogception,
     works,
     about,
+    illuminati,
 }

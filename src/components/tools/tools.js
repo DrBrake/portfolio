@@ -26,6 +26,9 @@ export default class Tools extends React.Component {
                         {item === 'mspaint'
                         ? <img src={IMAGES.MSPaint} alt='MSPaint icon' title='MSPaint'/>
                         : null}
+                        {item === 'you'
+                        ? <img src={IMAGES.You} alt="You icon" title="You"></img>
+                        : null}
                     </div>
                 )}
             </div>

@@ -2,10 +2,14 @@ import Sketch from '../resources/sketch.png';
 import Illustrator from '../resources/illustrator.png';
 import Photoshop from '../resources/photoshop.png';
 import MSPaint from '../resources/mspaint.png';
+import You from '../resources/you.png';
 import Logo from '../resources/logo.png';
 import Photo from '../resources/photo.jpg';
 
 import BlogceptionThumb from '../resources/blogception_thumb.png';
+import IlluminatiThumb from '../resources/illuminati_thumb.png';
+import BabymetalThumb from '../resources/babymetal_thumb.png';
+import Win95Thumb from '../resources/win95_thumb.png';
 
 import AboutMobile_Blog from '../resources/blogception/About mobile.png';
 import AboutTablet_Blog from '../resources/blogception/About tablet.png';
@@ -41,14 +45,39 @@ import MainScreenMenuOpen_Win95 from '../resources/win95/menu open.png';
 import Phone_Win95 from '../resources/win95/phone.png';
 import Solitaire_Win95 from '../resources/win95/Solitaire.png';
 
+import ContactUsDesktop_Illuminati from '../resources/Illuminati/Contact us desktop.png';
+import ContactUsTablet_Illuminati from '../resources/Illuminati/Contact us tablet.png';
+import ContactUsMobile_Illuminati from '../resources/Illuminati/Contact us mobile.png';
+import EventsDesktop_Illuminati from '../resources/Illuminati/Events desktop.png';
+import EventsTablet_Illuminati from '../resources/Illuminati/Events tablet.png';
+import EventsMobile_Illuminati from '../resources/Illuminati/Events mobile.png';
+import EventsMobileSelected_Illuminati from '../resources/Illuminati/Events - selected event mobile.png';
+import FrontpageDesktop_Illuminati from '../resources/Illuminati/Frontpage desktop.png';
+import FrontpageTablet_Illuminati from '../resources/Illuminati/Frontpage tablet.png';
+import FrontpageMobile_Illuminati from '../resources/Illuminati/Frontpage mobile.png';
+import FrontpageMobileMenu_Illuminati from '../resources/Illuminati/Frontpage menu mobile.png';
+import NewsDesktop_Illuminati from '../resources/Illuminati/News desktop.png';
+import NewsTablet_Illuminati from '../resources/Illuminati/News tablet.png';
+import NewsMobile_Illuminati from '../resources/Illuminati/News mobile.png';
+import OurMissionDesktop_Illuminati from '../resources/Illuminati/Our mission desktop.png';
+import OurMissionTablet_Illuminati from '../resources/Illuminati/Our mission tablet.png';
+import OurMissionMobile_Illuminati from '../resources/Illuminati/Our mission mobile.png';
+import ShopDesktop_Illuminati from '../resources/Illuminati/Shop desktop.png';
+import ShopTablet_Illuminati from '../resources/Illuminati/Shop tablet.png';
+import ShopMobile_Illuminati from '../resources/Illuminati/Shop mobile.png';
+
 export const IMAGES = {
     Sketch,
     Illustrator,
     Photoshop,
     MSPaint,
+    You,
     Logo,
+    Photo,
     BlogceptionThumb,
-    Photo
+    IlluminatiThumb,
+    BabymetalThumb,
+    Win95Thumb,
 }
 
 export const BLOGCEPTION_IMAGES = {
@@ -89,4 +118,27 @@ export const WIN95_IMAGES = {
     DosPrompt_Win95,
     BlueScreenOfDeath_Win95,
     Solitaire_Win95
+}
+
+export const ILLUMINATI_IMAGES = {
+    FrontpageDesktop_Illuminati,
+    FrontpageTablet_Illuminati,
+    FrontpageMobile_Illuminati,
+    FrontpageMobileMenu_Illuminati,
+    NewsDesktop_Illuminati,
+    NewsTablet_Illuminati,
+    NewsMobile_Illuminati,
+    EventsDesktop_Illuminati,
+    EventsTablet_Illuminati,
+    EventsMobile_Illuminati,
+    EventsMobileSelected_Illuminati,
+    OurMissionDesktop_Illuminati,
+    OurMissionTablet_Illuminati,
+    OurMissionMobile_Illuminati,
+    ContactUsDesktop_Illuminati,
+    ContactUsTablet_Illuminati,
+    ContactUsMobile_Illuminati,
+    ShopDesktop_Illuminati,
+    ShopTablet_Illuminati,
+    ShopMobile_Illuminati
 }
