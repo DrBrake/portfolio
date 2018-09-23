@@ -15,7 +15,7 @@ export default class Works extends React.Component {
                         image={IMAGES.IlluminatiThumb}
                         title={'Illuminati site concept'}
                         text={'Re-branding an old classic.'}
-                        date={'22.09.2018'}
+                        date={'23.09.2018'}
                         onClick={() => history.push(ROUTES.ILLUMINATI)}/>
                     <Card 
                         image={IMAGES.BabymetalThumb}

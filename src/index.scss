@@ -26,6 +26,10 @@ body {
     min-height: 100%;
 }
 
+:global(.illuminatiBG) {
+    background-image: url('../resources/maxresdefault_invert.jpg');
+}
+
 :global(.container) {
     background-color: white;
     width: 100%;

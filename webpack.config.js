@@ -1,8 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 var javascriptEntryPath = path.resolve(__dirname, 'src', 'index.js');
-var htmlEntryPath = path.resolve(__dirname, 'src', 'index.html');
 var buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
@@ -10,8 +11,7 @@ module.exports = {
     entry: [
         'babel-polyfill',
         'react-hot-loader/patch',
-        javascriptEntryPath,
-        htmlEntryPath
+        javascriptEntryPath
     ],
 
     output: {
@@ -25,10 +25,6 @@ module.exports = {
                 test: /\.(js?|jsx)$/,
                 exclude: /(node_modules|bower_component)/,
                 loader: 'babel-loader'
-            },
-            {
-                test: /\.html$/,
-                loader: 'file-loader?name=[name].[ext]'
             },
             {
                 test: /\.svg$/,
@@ -75,5 +71,13 @@ module.exports = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new CompressionPlugin({
+            test: /\.(js?|jsx|svg|gif|png|jpe?g|otf|eot|woff|woff2|ttf|ico)$/
+          }),
+      new HtmlWebpackPlugin({
+          template: 'src/index.html'
+      })
+    ]
 }

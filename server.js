@@ -4,19 +4,20 @@ var http = require('http');
 var https = require('https');
 var fs = require('fs');
 var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
+var expressStaticGzip = require("express-static-gzip");
 
 var helmet = require('helmet');
 
-// var sslOptions = {
-//     key: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/privkey.pem'),
-//     cert: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/fullchain.pem')
-// }
-
 var sslOptions = {
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem'),
-    passphrase: 'mOHiGB2dDCFft9bX'
+    key: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/fullchain.pem')
 }
+
+// var sslOptions = {
+//     key: fs.readFileSync('key.pem'),
+//     cert: fs.readFileSync('cert.pem'),
+//     passphrase: 'mOHiGB2dDCFft9bX'
+// }
 
 const isDeveloping = process.env.NODE_ENV === 'development';
 const app = express();
@@ -67,7 +68,7 @@ else {
     }));
     app.use(redirectToHTTPS([], [], 301));
     const staticPath = path.join(__dirname, 'dist');
-    app.use(express.static(staticPath));
+    app.use(expressStaticGzip(staticPath));
     app.get('*', function(req, res) {
         res.sendFile(staticPath + "/index.html");
     })
