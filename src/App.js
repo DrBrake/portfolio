@@ -26,6 +26,7 @@ export default class App extends React.Component {
                         <Route exact path={ROUTES.WIN95} component={Views.win95Mobile}/>
                         <Route exact path={ROUTES.BLOGCEPTION} component={Views.blogception}/>
                         <Route exact path={ROUTES.ILLUMINATI} component={Views.illuminati}/>
+                        <Route exact path={ROUTES.DEVELOPER} component={Views.developer}/>
                     </Switch>
                 </div>
             </Router>

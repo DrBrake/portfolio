@@ -10,6 +10,9 @@ import BlogceptionThumb from '../resources/blogception_thumb.png';
 import IlluminatiThumb from '../resources/illuminati_thumb.png';
 import BabymetalThumb from '../resources/babymetal_thumb.png';
 import Win95Thumb from '../resources/win95_thumb.png';
+import DevThumb from '../resources/dev_thumbnail.png';
+
+import DeveloperPage from '../resources/developer.png';
 
 import AboutMobile_Blog from '../resources/blogception/About mobile.png';
 import AboutTablet_Blog from '../resources/blogception/About tablet.png';
@@ -78,6 +81,8 @@ export const IMAGES = {
     IlluminatiThumb,
     BabymetalThumb,
     Win95Thumb,
+    DevThumb,
+    DeveloperPage,
 }
 
 export const BLOGCEPTION_IMAGES = {
