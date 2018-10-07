@@ -4,5 +4,6 @@ export const ROUTES = {
     BABYMETAL: '/babymetal-concept',
     WIN95: '/win95-mobile',
     BLOGCEPTION: '/blogception',
-    ILLUMINATI: '/illuminati'
+    ILLUMINATI: '/illuminati',
+    DEVELOPER: '/developer',
 }
