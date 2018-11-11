@@ -27,6 +27,7 @@ export default class App extends React.Component {
                         <Route exact path={ROUTES.BLOGCEPTION} component={Views.blogception}/>
                         <Route exact path={ROUTES.ILLUMINATI} component={Views.illuminati}/>
                         <Route exact path={ROUTES.DEVELOPER} component={Views.developer}/>
+                        <Route exact path={ROUTES.EUPHORIA} component={Views.euphoria}/>
                     </Switch>
                 </div>
             </Router>

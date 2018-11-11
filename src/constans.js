@@ -6,4 +6,5 @@ export const ROUTES = {
     BLOGCEPTION: '/blogception',
     ILLUMINATI: '/illuminati',
     DEVELOPER: '/developer',
+    EUPHORIA: '/euphoria',
 }

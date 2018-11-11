@@ -29,6 +29,9 @@ export default class Tools extends React.Component {
                         {item === 'you'
                         ? <img src={IMAGES.You} alt="You icon" title="You"></img>
                         : null}
+                        {item === 'inkscape'
+                        ? <a href='https://inkscape.org/' target='_blank'><img src={IMAGES.Inkscape} alt='Inkscape' title='Inkscape'></img></a>
+                        : null}
                     </div>
                 )}
             </div>
