@@ -7,4 +7,5 @@ export const ROUTES = {
     ILLUMINATI: '/illuminati',
     DEVELOPER: '/developer',
     EUPHORIA: '/euphoria',
+    DEX: '/dex',
 }

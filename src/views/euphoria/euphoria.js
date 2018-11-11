@@ -50,7 +50,7 @@ export default class Euphoria extends React.Component {
                             Euphoria - Club & Bar site concept
                         </div>
                         <div>
-                            This concept was inspired by the opening sequence to Cowboy Bebop, Bauhaus and Pop art. I ended up doing this desktop first and did not initially know if I'd even make mobile versions.
+                            This concept was inspired by the <a href='https://www.youtube.com/watch?v=NRI_8PUXx2A'>opening sequence to Cowboy Bebop</a>, Bauhaus and Pop art. I ended up doing this desktop first and did not initially know if I'd even make mobile versions.
                         </div>
                     </div>
                     <div className={'workPageContainer'}>

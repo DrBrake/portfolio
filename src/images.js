@@ -13,6 +13,7 @@ import BabymetalThumb from '../resources/babymetal_thumb.png';
 import Win95Thumb from '../resources/win95_thumb.png';
 import DevThumb from '../resources/dev_thumbnail.png';
 import EuphoriaThumb from '../resources/euphoria_thumb.png';
+import DexThumb from '../resources/dex_thumb.png';
 
 import DeveloperPage from '../resources/developer.png';
 
@@ -94,6 +95,10 @@ import VenueDesktop_Euphoria from '../resources/euphoria/Venue desktop.png';
 import VenueTablet_Euphoria from '../resources/euphoria/Venue tablet.png';
 import VenueMobile_Euphoria from '../resources/euphoria/Venue mobile.png';
 
+import DexOriginal from '../resources/dex/dex_glitch_orig.png';
+import DexWhite from '../resources/dex/dex_glitch_white.png';
+import DexPink from '../resources/dex/dex_glitch_pink.png';
+
 export const IMAGES = {
     Sketch,
     Illustrator,
@@ -110,6 +115,7 @@ export const IMAGES = {
     DeveloperPage,
     EuphoriaThumb,
     Inkscape,
+    DexThumb,
 }
 
 export const BLOGCEPTION_IMAGES = {
@@ -198,4 +204,10 @@ export const EUPHORIA_IMAGES = {
     VenueDesktop_Euphoria,
     VenueTablet_Euphoria,
     VenueMobile_Euphoria
+}
+
+export const DEX_IMAGES = {
+    DexOriginal,
+    DexWhite,
+    DexPink
 }

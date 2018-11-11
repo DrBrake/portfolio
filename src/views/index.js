@@ -6,6 +6,7 @@ import about from './about/about.js';
 import illuminati from './illuminati/illuminati.js';
 import developer from './developer/developer.js';
 import euphoria from './euphoria/euphoria.js';
+import dex from './dex/dex.js';
 
 export const Views = {
     babymetalConcept,
@@ -16,4 +17,5 @@ export const Views = {
     illuminati,
     developer,
     euphoria,
+    dex,
 }
