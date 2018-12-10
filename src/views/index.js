@@ -7,6 +7,7 @@ import illuminati from './illuminati/illuminati.js';
 import developer from './developer/developer.js';
 import euphoria from './euphoria/euphoria.js';
 import dex from './dex/dex.js';
+import inhale from './inhale/inhale.js';
 
 export const Views = {
     babymetalConcept,
@@ -18,4 +19,5 @@ export const Views = {
     developer,
     euphoria,
     dex,
+    inhale,
 }
