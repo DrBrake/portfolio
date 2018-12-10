@@ -8,19 +8,24 @@ var expressStaticGzip = require("express-static-gzip");
 
 var helmet = require('helmet');
 
-// var sslOptions = {
-//     key: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/privkey.pem'),
-//     cert: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/fullchain.pem')
-// }
-
-var sslOptions = {
-    key: fs.readFileSync('key.pem'),
-    cert: fs.readFileSync('cert.pem'),
-    passphrase: 'mOHiGB2dDCFft9bX'
-}
-
 const isDeveloping = process.env.NODE_ENV === 'development';
 const app = express();
+
+var sslOptions = {};
+
+if (isDeveloping) {
+    sslOptions = {
+        key: fs.readFileSync('key.pem'),
+        cert: fs.readFileSync('cert.pem'),
+        passphrase: 'mOHiGB2dDCFft9bX'
+    }
+}
+else {
+    sslOptions = {
+        key: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/privkey.pem'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/fullchain.pem')
+    }    
+}
 
 if (isDeveloping) {
     let webpack = require('webpack');

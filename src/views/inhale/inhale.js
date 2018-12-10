@@ -102,7 +102,8 @@ export default class Inhale extends React.Component {
             .yoyo(true)
             .start();
 
-        this.app.stage.filters = [new CRTFilter({noise: 0.2, lineWidth: 2.5, lineContrast: 0.3})];
+        this.crtFilter = new CRTFilter({noise: 0.2, lineWidth: 2.5, lineContrast: 0.3, time: 0.5});
+        this.app.stage.filters = [this.crtFilter];
         this.columnContainer.filters = [new TiltShiftFilter(25, 1000)];
 
         this.glitchTimeout();
@@ -151,8 +152,14 @@ export default class Inhale extends React.Component {
         });
 
         this.columnContainer.x = (this.state.width / 2) - (this.columnContainer.width / 3);
-        this.logoContainer.x = (this.state.width / 2) - (this.logoContainer.width / 2);
-    
+        this.columnContainer.width = this.state.width + 600;
+        this.logoContainer.x = this.state.width / 2;
+
+        // if (width < 768) {
+        //     this.logoContainer.width = (this.state.width / 1.2);
+        //     this.logoContainer.height = (this.state.width / 1.2);
+        // }
+
         if (this.app) {
             this.app.renderer.resize(width, height);
         }
@@ -166,6 +173,7 @@ export default class Inhale extends React.Component {
                 this.points[i].x = Math.sin((i * 0.5) +  this.count);
             }
 
+            this.crtFilter.time += 0.5;
             TWEEN.update(this.app.ticker.lastTime);
         });
     }
