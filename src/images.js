@@ -14,6 +14,7 @@ import Win95Thumb from '../resources/win95_thumb.png';
 import DevThumb from '../resources/dev_thumbnail.png';
 import EuphoriaThumb from '../resources/euphoria_thumb.png';
 import DexThumb from '../resources/dex_thumb.png';
+import InhaleThumb from '../resources/inhale_thumb.png';
 
 import DeveloperPage from '../resources/developer.png';
 
@@ -99,6 +100,11 @@ import DexOriginal from '../resources/dex/dex_glitch_orig.png';
 import DexWhite from '../resources/dex/dex_glitch_white.png';
 import DexPink from '../resources/dex/dex_glitch_pink.png';
 
+import LotusDevil from '../resources/inhale/lotusDevil.png';
+import PinkRect from '../resources/inhale/pinkRect.png';
+import InhaleTitle from '../resources/inhale/inhale-title.png';
+import InhaleSubtitle from '../resources/inhale/inhale-subtitle.png';
+
 export const IMAGES = {
     Sketch,
     Illustrator,
@@ -116,6 +122,7 @@ export const IMAGES = {
     EuphoriaThumb,
     Inkscape,
     DexThumb,
+    InhaleThumb,
 }
 
 export const BLOGCEPTION_IMAGES = {
@@ -210,4 +217,11 @@ export const DEX_IMAGES = {
     DexOriginal,
     DexWhite,
     DexPink
+}
+
+export const INHALE_IMAGES = {
+    LotusDevil,
+    PinkRect,
+    InhaleTitle,
+    InhaleSubtitle
 }

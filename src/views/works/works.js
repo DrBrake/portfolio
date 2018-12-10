@@ -12,6 +12,12 @@ export default class Works extends React.Component {
             <div className={'container'}>
                 <div className={'viewContainerGrid'}>
                     <Card 
+                        image={IMAGES.InhaleThumb}
+                        title={'Inhale'}
+                        text={'The Devil, selling you cigarettes.'}
+                        date={'10.12.2018'}
+                        onClick={() => history.push(ROUTES.INHALE)}/>
+                    <Card 
                         image={IMAGES.DexThumb}
                         title={'DEX shirt logo'}
                         text={'Logo design for our team hoodie.'}
@@ -47,12 +53,12 @@ export default class Works extends React.Component {
                         text={'The best operating system, with you wherever you go.'}
                         date={'21.08.2018'}
                         onClick={() => history.push(ROUTES.WIN95)}/>
-                    <Card 
+                    {/* <Card 
                         image={IMAGES.BlogceptionThumb}
                         title={'Blogception'}
                         text={'Designing a design blog design. Zero Inception references beyond this point.'}
                         date={'21.08.2018'}
-                        onClick={() => history.push(ROUTES.BLOGCEPTION)}/>
+                        onClick={() => history.push(ROUTES.BLOGCEPTION)}/> */}
                 </div>
             </div>
         )
