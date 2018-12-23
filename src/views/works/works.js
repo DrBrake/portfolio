@@ -12,6 +12,12 @@ export default class Works extends React.Component {
             <div className={'container'}>
                 <div className={'viewContainerGrid'}>
                     <Card 
+                        image={IMAGES.SinderThumb}
+                        title={'One shot #02: Sinder - dating app for devil worshippers'}
+                        text={''}
+                        date={'23.12.2018'}
+                        onClick={() => history.push(ROUTES.SINDER)}/>
+                    <Card 
                         image={IMAGES.InhaleThumb}
                         title={'Inhale'}
                         text={'The Devil, selling you cigarettes.'}

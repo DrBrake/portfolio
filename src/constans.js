@@ -8,5 +8,6 @@ export const ROUTES = {
     DEVELOPER: '/developer',
     EUPHORIA: '/euphoria',
     DEX: '/dex',
-    INHALE: '/inhale'
+    INHALE: '/inhale',
+    SINDER: '/sinder'
 }

@@ -32,6 +32,9 @@ export default class Tools extends React.Component {
                         {item === 'inkscape'
                         ? <a href='https://inkscape.org/' target='_blank'><img src={IMAGES.Inkscape} alt='Inkscape' title='Inkscape'></img></a>
                         : null}
+                        {item === 'procreate'
+                        ? <a href='https://procreate.art/' target='_blank'><img src={IMAGES.Procreate} alt='Procreate link' title='Procreate'></img></a>
+                        : null}
                     </div>
                 )}
             </div>

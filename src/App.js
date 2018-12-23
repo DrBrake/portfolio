@@ -33,6 +33,7 @@ export default class App extends React.Component {
                             <Route exact path={ROUTES.EUPHORIA} component={Views.euphoria}/>
                             <Route exact path={ROUTES.DEX} component={Views.dex}/>
                             <Route exact path={ROUTES.INHALE} component={Views.inhale}/>
+                            <Route exact path={ROUTES.SINDER} component={Views.sinder}/>
                         </Switch>
                     </ScrollToTop>
                 </div>
