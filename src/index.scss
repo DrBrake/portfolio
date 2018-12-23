@@ -22,7 +22,7 @@ body {
 
 :global(#router) {
     padding-bottom: 50px;
-    background-color: #E0E0E0;
+    background-color: #212121;
     min-height: 100%;
 }
 
@@ -38,7 +38,6 @@ body {
     @include desktop {
         border-radius: 5px;
         width: 980px;
-        box-shadow: 2px 2px 4px rgba(121, 121, 121, .5);
     }
 }
 

@@ -8,6 +8,7 @@ import developer from './developer/developer.js';
 import euphoria from './euphoria/euphoria.js';
 import dex from './dex/dex.js';
 import inhale from './inhale/inhale.js';
+import sinder from './sinder/sinder.js';
 
 export const Views = {
     babymetalConcept,
@@ -20,4 +21,5 @@ export const Views = {
     euphoria,
     dex,
     inhale,
+    sinder,
 }

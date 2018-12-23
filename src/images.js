@@ -6,6 +6,7 @@ import You from '../resources/you.png';
 import Logo from '../resources/logo.png';
 import Photo from '../resources/photo.jpg';
 import Inkscape from '../resources/inkscape.png';
+import Procreate from '../resources/procreate.png';
 
 import BlogceptionThumb from '../resources/blogception_thumb.png';
 import IlluminatiThumb from '../resources/illuminati_thumb.png';
@@ -15,8 +16,10 @@ import DevThumb from '../resources/dev_thumbnail.png';
 import EuphoriaThumb from '../resources/euphoria_thumb.png';
 import DexThumb from '../resources/dex_thumb.png';
 import InhaleThumb from '../resources/inhale_thumb.png';
+import SinderThumb from '../resources/sinder_thumb.png';
 
 import DeveloperPage from '../resources/developer.png';
+import Sinder from '../resources/sinder.png';
 
 import AboutMobile_Blog from '../resources/blogception/About mobile.png';
 import AboutTablet_Blog from '../resources/blogception/About tablet.png';
@@ -111,6 +114,7 @@ export const IMAGES = {
     Photoshop,
     MSPaint,
     You,
+    Procreate,
     Logo,
     Photo,
     BlogceptionThumb,
@@ -123,6 +127,12 @@ export const IMAGES = {
     Inkscape,
     DexThumb,
     InhaleThumb,
+    SinderThumb,
+}
+
+export const ONE_SHOT = {
+    DeveloperPage,
+    Sinder
 }
 
 export const BLOGCEPTION_IMAGES = {
