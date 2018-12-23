@@ -14,11 +14,7 @@ class Header extends React.Component {
                 <div className={styles.headerContainer}>
                     <div className={styles.bodyContainer}>
                         <div className={styles.logo} onClick={() => history.push(ROUTES.WORKS)}><img src={IMAGES.Logo}/></div>
-                        <div className={styles.subtitle}>
-                            <span>UI</span>
-                            <span>Graphic design</span>
-                            <span>UX</span>
-                        </div>
+                        <div className={styles.subtitle}>Graphic design blog</div>
                     </div>
                 </div>
                 <div className={styles.menuContainer}>

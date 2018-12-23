@@ -5,6 +5,7 @@
     min-height: 345px;
     box-shadow: 2px 2px 4px rgba(121, 121, 121, .5);
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .imageContainer {
@@ -16,6 +17,7 @@
         height: 100%;
         object-fit: cover;
         object-position: top;
+        border-radius: 3px 3px 0 0;
         &.babymetal {
             object-position: -35px -410px;
             width: 140%;
