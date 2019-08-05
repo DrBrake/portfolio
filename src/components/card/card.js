@@ -8,15 +8,9 @@ export default class Card extends React.Component {
 
         return (
             <div className={styles.container} onClick={() => onClick()}>
-                <div className={styles.imageContainer}>
-                    <img className={styles[imageStyle]} src={image}/>
-                </div>
-                <div className={styles.textContainer}>
-                    <div className={styles.titleContainer}>
-                        <div className={styles.title}>{title}</div>
-                        <div className={styles.date}>{date}</div>
-                    </div>
-                    <div className={styles.text}>{text}</div>
+                <img className={styles[imageStyle]} src={image}/>
+                <div className={styles.titleContainer}>
+                    {title}
                 </div>
             </div>
         )

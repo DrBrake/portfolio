@@ -3,12 +3,10 @@ import styles from './thumbnail.scss';
 
 export default class Thumbnail extends React.Component {
     render() {
-
-        const { image, style, onClick } = this.props;
-
+        const { image, onClick, fullWidth } = this.props;
         return (
-            <div className={styles.container + ' ' + (style ? style.split(',').map(s => styles[s]).join(' ') : '') + ' ' + (image ? '' : styles.noImage)} onClick={() => onClick ? onClick() : null}>
-                <img src={image} />
+            <div className={styles.container} onClick={() => onClick ? onClick() : null}>
+                <img src={image} style={fullWidth ? { width: '100%' } : null} />
             </div>
         )
     }

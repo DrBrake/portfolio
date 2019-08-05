@@ -7,44 +7,11 @@
 .bodyContainer {
     max-width: 340px;
     margin: auto;
-    padding: 20px 0;
+    padding: 32px 0;
 }
 
 .logo {
     img {
         width: 100%;
-    }
-}
-
-.subtitle {
-    text-align: center;
-    color: white;
-}
-
-.menuContainer {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 0 38px;
-    max-width: 471px;
-    margin: 20px auto;
-    > button:first-of-type {
-        margin-right: 10px;
-    }
-    button {
-        cursor: pointer;
-        font-size: 25px;
-        font-weight: bold;
-        width: 100%;
-        background: #ab035c;
-        color: white;
-        border-radius: 8px;
-        border: 0px solid white;
-        text-align: center;
-        outline: none;
-        &:hover {
-            background-color: #ff7fb9;
-            color: black;
-        }
     }
 }

@@ -1,0 +1,20 @@
+@import '../../shared.scss';
+
+.aboutContainer {
+    @include defaultContainer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.textContainer {
+    margin-left: 16px;
+    max-width: 715px;
+    text-align: right;
+}
+
+.photo {
+    border-radius: 80px;
+    width: 100px;
+}
