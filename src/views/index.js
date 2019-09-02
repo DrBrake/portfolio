@@ -1,25 +1,17 @@
-import babymetalConcept from './babymetal-concept/babymetal-concept.js';
 import win95Mobile from './win95-mobile/win95-mobile.js';
-import blogception from './blogception/blogception.js';
 import works from './works/works.js';
-import about from './about/about.js';
-import illuminati from './illuminati/illuminati.js';
-import developer from './developer/developer.js';
-import euphoria from './euphoria/euphoria.js';
-import dex from './dex/dex.js';
 import inhale from './inhale/inhale.js';
-import sinder from './sinder/sinder.js';
+import hiq from './hiq/hiq.js';
+import oneShots from './oneShots/oneShots.js';
+import timetravel from './timetravel/timetravel.js';
+import museum from './museum/museum';
 
 export const Views = {
-    babymetalConcept,
     win95Mobile,
-    blogception,
     works,
-    about,
-    illuminati,
-    developer,
-    euphoria,
-    dex,
     inhale,
-    sinder,
+    hiq,
+    oneShots,
+    timetravel,
+    museum,
 }

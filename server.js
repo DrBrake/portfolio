@@ -1,9 +1,9 @@
 var path = require('path');
 var express = require('express');
 var http = require('http');
-var https = require('https');
+// var https = require('https');
 var fs = require('fs');
-var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
+// var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS;
 var expressStaticGzip = require("express-static-gzip");
 
 var helmet = require('helmet');
@@ -11,21 +11,21 @@ var helmet = require('helmet');
 const isDeveloping = process.env.NODE_ENV === 'development';
 const app = express();
 
-var sslOptions = {};
+// var sslOptions = {};
 
-if (isDeveloping) {
-    sslOptions = {
-        key: fs.readFileSync('key.pem'),
-        cert: fs.readFileSync('cert.pem'),
-        passphrase: 'mOHiGB2dDCFft9bX'
-    }
-}
-else {
-    sslOptions = {
-        key: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/privkey.pem'),
-        cert: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/fullchain.pem')
-    }    
-}
+// if (isDeveloping) {
+//     sslOptions = {
+//         key: fs.readFileSync('key.pem'),
+//         cert: fs.readFileSync('cert.pem'),
+//         passphrase: 'mOHiGB2dDCFft9bX'
+//     }
+// }
+// else {
+//     sslOptions = {
+//         key: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/privkey.pem'),
+//         cert: fs.readFileSync('/etc/letsencrypt/live/henriisbatman.com/fullchain.pem')
+//     }    
+// }
 
 if (isDeveloping) {
     let webpack = require('webpack');
@@ -71,7 +71,7 @@ else {
         },
         frameGuard: { action: 'deny' }
     }));
-    app.use(redirectToHTTPS([], [], 301));
+    // app.use(redirectToHTTPS([], [], 301));
     const staticPath = path.join(__dirname, 'dist');
     app.use(expressStaticGzip(staticPath));
     app.get('*', function(req, res) {
@@ -88,9 +88,9 @@ http.createServer(app).listen(80, '0.0.0.0', function onStart(err) {
 });
 
 
-https.createServer(sslOptions, app).listen(443, '0.0.0.0', function onStart(err) {
-    if (err) {
-        console.log(err)
-    }
-    console.info('==> Listening on port 443, open up localhost in your browser')
-});
+// https.createServer(sslOptions, app).listen(443, '0.0.0.0', function onStart(err) {
+//     if (err) {
+//         console.log(err)
+//     }
+//     console.info('==> Listening on port 443, open up localhost in your browser')
+// });

@@ -1,48 +1,17 @@
 @import '../../shared.scss';
 
 .imageContainer {
-    width: 100%;
+    margin-bottom: 8px;
+    overflow: hidden;
+    margin-left: -16px;
+    margin-right: -16px;
     display: flex;
-    flex-flow: row wrap;
-    @include tablet-small {
-        flex-flow: row nowrap;
-    }
-}
-
-.primaryImageContainer {
-    width: 100%;
-    margin-right: 0;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 16px;
     @include tablet {
-        min-width: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        grid-auto-flow: column;
     }
-    @include tablet-small {
-        margin-right: 10px;
-    }
-    .onlyImage & {
-        margin-right: 0;
-    }
-}
-
-.secondaryImageContainer {
-    display: flex;
-    width: 100%;
-    > div:nth-of-type(2) {
-        margin-left: 10px;
-    }
-    @include tablet-small {
-        width: initial;
-    }
-    .onlySecondary & {
-        > div {
-            margin-left: 10px;
-        }
-        > div:first-of-type{
-            margin-left: 0;
-        }
-    }
-}
-
-.tinyImageContainer {
-    display: flex;
-    flex-flow: column nowrap;
 }
