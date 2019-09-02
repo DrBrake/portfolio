@@ -26,6 +26,10 @@ export default class Works extends React.Component {
                             title={'Timetravels Inc.'}
                             onClick={() => history.push(ROUTES.TIMETRAVEL)} />
                         <Card
+                            image={IMAGES.MuseumThumb}
+                            title={'Museum app'}
+                            onClick={() => history.push(ROUTES.MUSEUM)} />
+                        <Card
                             image={IMAGES.OneShotsThumb}
                             title={'One shots'}
                             onClick={() => history.push(ROUTES.ONE_SHOTS)} />
@@ -40,8 +44,6 @@ export default class Works extends React.Component {
                         <Card
                             image={IMAGES.Win95Thumb}
                             title={'Windows 95 mobile'}
-                            text={'The best operating system, with you wherever you go.'}
-                            date={'21.08.2018'}
                             onClick={() => history.push(ROUTES.WIN95)} />
                     </div>
                 </div>

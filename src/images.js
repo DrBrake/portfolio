@@ -13,6 +13,7 @@ import InhaleThumb from '../resources/inhale_thumb.png';
 import HiQThumb from '../resources/hiq_logos_thumb.png';
 import TimetravelThumb from '../resources/timetravel_thumb.png';
 import OneShotsThumb from '../resources/oneshots_thumb.png';
+import MuseumThumb from '../resources/museum_thumb.png';
 
 import BlueScreenOfDeath_Win95 from '../resources/win95/blue screen of death.png';
 import DosPrompt_Win95 from '../resources/win95/dos prompt.png';
@@ -48,6 +49,19 @@ import Success from '../resources/timetravel/Success.png';
 import Rome from '../resources/timetravel/Rome.png';
 import Westworld from '../resources/timetravel/Westworld.png';
 
+import MuseumHome from '../resources/museum/Home.png';
+import MuseumMap from '../resources/museum/Map.png';
+import MuseumMapRoom from '../resources/museum/Room detail.png';
+import MuseumCollection from '../resources/museum/Collection.png';
+import MuseumExhibition from '../resources/museum/Exhibition.png';
+import MuseumPaitingDetail from '../resources/museum/Painting detail.png';
+import MuseumPaitingAudioGuide from '../resources/museum/Painting audio guide.png';
+import MuseumPaitingBuyingOptions from '../resources/museum/Buying options.png';
+import MuseumPaitingAudioTour from '../resources/museum/Buy audio tour.png';
+import MuseumPaitingAudioTourDetail from '../resources/museum/Buy audio tour - room detail.png';
+import MuseumPaitingProfile from '../resources/museum/Profile.png';
+import MuseumPaitingBehindThePainting from '../resources/museum/behind_the_painting.png';
+
 import ArrowLeft from '../resources/baseline-arrow_back-24px.svg';
 export { ArrowLeft };
 
@@ -66,6 +80,7 @@ export const IMAGES = {
     HiQThumb,
     TimetravelThumb,
     OneShotsThumb,
+    MuseumThumb,
 }
 
 export const WIN95_IMAGES = {
@@ -110,4 +125,19 @@ export const TIMETRAVEL = {
     Success,
     Rome,
     Westworld,
+}
+
+export const MUSEUM = {
+    MuseumHome,
+    MuseumMap,
+    MuseumMapRoom,
+    MuseumCollection,
+    MuseumExhibition,
+    MuseumPaitingDetail,
+    MuseumPaitingAudioGuide,
+    MuseumPaitingBuyingOptions,
+    MuseumPaitingAudioTour,
+    MuseumPaitingAudioTourDetail,
+    MuseumPaitingProfile,
+    MuseumPaitingBehindThePainting,
 }

@@ -28,6 +28,7 @@ export default class App extends React.Component {
                             <Route exact path={ROUTES.HIQ} component={Views.hiq} />
                             <Route exact path={ROUTES.ONE_SHOTS} component={Views.oneShots} />
                             <Route exact path={ROUTES.TIMETRAVEL} component={Views.timetravel} />
+                            <Route exact path={ROUTES.MUSEUM} component={Views.museum} />
                         </Switch>
                     </ScrollToTop>
                     <div className={styles.imageContainer}>

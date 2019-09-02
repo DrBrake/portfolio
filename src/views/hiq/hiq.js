@@ -49,53 +49,48 @@ export default class HIQ extends React.Component {
                     <div className={'workTitleContainer'}>
                         <TopNav />
                         <div className={'workTitle'}>
-                            DEX shirt logo
+                            HiQ logos & such
                         </div>
                         <div>
-                            I took part in creating a logo design for our development teams team hoodie. The original idea came from me just liking glitch effects quite a bit.
+                            Every now and again I've volunteered and/or been asked to create logos and such for HiQ Finland. These are those.
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
-                        <div className={'workSubtitle'}>Original / White / Pink</div>
+                        <div className={'workSubtitle'}>DEX hoodie</div>
                         <Gallery >
                             <Thumbnail style='large,center' key={getUniqueKey()} image={HIQ_IMAGES.DexPink} onClick={() => this.pickLightBoxImage(0)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Original: </span>For this I just followed a tutorial on text glitch effects. It's the same text on top of itself and a Wave filter added to each layer. I accidentally stumbled on the CGA style colors by messing around with a Hue/Saturation layer.</p>
-                            <p><span>White: </span>The white version came from the requirement to only have a single color for the logo. I took some layers away from the original and added some random ASCII. I got the idea for the ASCII from <a href='https://archive.org/details/malware_CRASH.COM'>this actual MS-DOS virus.</a></p>
-                            <p><span>Pink: </span>Since the final version could have two colors, I added the pink shadow back in from the original and made it more closely resemble the company colors. The idea for the code comment subtitle was there from the start, but I only added it to the final version. Cherry on top: little bit more glitch effects, because why not?</p>
+                            <p>This one is a design for our development team hoodie. It was inspired by me liking glitch effects more than is appropriate. I got the idea for the ASCII from <a href='https://archive.org/details/malware_CRASH.COM'>this actual MS-DOS virus.</a></p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
-                        <div className={'workSubtitle'}>Subtitle</div>
+                        <div className={'workSubtitle'}>Office patches / stickers</div>
                         <Gallery >
                             <Thumbnail style='large,center' key={getUniqueKey()} image={HIQ_IMAGES.IlluminatiPatch} onClick={() => this.pickLightBoxImage(1)}/>
                             <Thumbnail style='large,center' key={getUniqueKey()} image={HIQ_IMAGES.Tehtaankatu} onClick={() => this.pickLightBoxImage(2)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Subtitle 1: </span>Text 1</p>
-                            <p><span>Subtitle 2: </span>Text 2</p>
+                            <p>I can't recall if this idea had any other inspiration than me liking the idea of secret societies and occult nonesense. I kind of equate developers and designers as the keepers of secret knowledge here. The biggest difference between us and occultists is that we don't have cool robes. But what if we did?!</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
-                        <div className={'workSubtitle'}>Subtitle</div>
+                        <div className={'workSubtitle'}>Team logo for Norway</div>
                         <Gallery >
                             <Thumbnail style='large,center' key={getUniqueKey()} image={HIQ_IMAGES.TrueVikings} onClick={() => this.pickLightBoxImage(3)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Subtitle 1: </span>Text 1</p>
-                            <p><span>Subtitle 2: </span>Text 2</p>
+                            <p>Shirt and flag design for our team for a company trip to Norway. It's a variation on the above Illuminati logo. I originally pitched it with something that was closer to the above, but the team wanted something more Norway-themed. Hence the horns. I also had colored versions of this (including code highlight), but the team voted for the black and white. Those bastards.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
-                        <div className={'workSubtitle'}>Subtitle</div>
+                        <div className={'workSubtitle'}>Company shirt for Norway</div>
                         <Gallery >
                             <Thumbnail style='large,center' key={getUniqueKey()} image={HIQ_IMAGES.TrollPoster} onClick={() => this.pickLightBoxImage(4)}/>
                             <Thumbnail style='large,center' key={getUniqueKey()} image={HIQ_IMAGES.Troll} onClick={() => this.pickLightBoxImage(5)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Subtitle 1: </span>Text 1</p>
-                            <p><span>Subtitle 2: </span>Text 2</p>
+                            <p>I also got to design the company t-shirt for the Norway trip. The original was more WW2 propaganda poster inspired, but since that didn't really make for a good shirt, I redesigned it to be more like a sports team logo.</p>
                         </div>
                     </div>
                 </div>

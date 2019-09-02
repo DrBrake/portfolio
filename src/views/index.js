@@ -4,6 +4,7 @@ import inhale from './inhale/inhale.js';
 import hiq from './hiq/hiq.js';
 import oneShots from './oneShots/oneShots.js';
 import timetravel from './timetravel/timetravel.js';
+import museum from './museum/museum';
 
 export const Views = {
     win95Mobile,
@@ -12,4 +13,5 @@ export const Views = {
     hiq,
     oneShots,
     timetravel,
+    museum,
 }

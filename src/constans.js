@@ -5,4 +5,5 @@ export const ROUTES = {
     HIQ: '/hiq',
     ONE_SHOTS: '/one-shots',
     TIMETRAVEL: '/timetravel',
+    MUSEUM: '/museum',
 }
