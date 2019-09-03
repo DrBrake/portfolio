@@ -52,7 +52,7 @@ export default class HIQ extends React.Component {
                             HiQ logos & such
                         </div>
                         <div>
-                            Every now and again I've volunteered and/or been asked to create logos and such for HiQ Finland. These are those.
+                            Every now and again I've volunteered and/or been asked to create logos and whatnot for HiQ Finland. These are those.
                         </div>
                     </div>
                     <div className={'workPageContainer'}>

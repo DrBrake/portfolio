@@ -52,7 +52,7 @@ export default class Timetravel extends React.Component {
                             Timetravels Inc.
                         </div>
                         <div>
-                            I like the retrowave aesthetic! Let's use it in a design!
+                            I like the retrowave aesthetic! Let's use it in a design! I wanted to make a travel site/app, but since just making it normally would be boring, I decided to make it about time travel.
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -62,8 +62,7 @@ export default class Timetravel extends React.Component {
                             <Thumbnail style='large,center' key={getUniqueKey()} image={TIMETRAVEL.FrontPageCalendar} onClick={() => this.pickLightBoxImage(1)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Frontpage: </span>Text 1</p>
-                            <p><span>Calendar: </span>Text 2</p>
+                            <p>Time travel imposes some unique challenges for UI design. Here you have to pick two dates: the actual date of your travel and the date in time to travel to.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -73,8 +72,8 @@ export default class Timetravel extends React.Component {
                             <Thumbnail style='large,center' key={getUniqueKey()} image={TIMETRAVEL.Popup} onClick={() => this.pickLightBoxImage(3)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Trip details: </span>Text 1</p>
-                            <p><span>Popup: </span>Little popup telling you about crime. If you love heroine, we've got good news!</p>
+                            <p><span>Trip details: </span>Includes info about where to stay, what to see and what to watch out for. Booking a hotel in the past is quite easy, since we already know what rooms are available and when.</p>
+                            <p><span>Popup: </span>The Considerations section of the previous page opens a little popup telling you about crime. If you love heroine, we've got good news!</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -84,8 +83,7 @@ export default class Timetravel extends React.Component {
                             <Thumbnail style='large,center' key={getUniqueKey()} image={TIMETRAVEL.PaymentInfo} onClick={() => this.pickLightBoxImage(5)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Booking form: </span>Text 1</p>
-                            <p><span>Payment: </span>Text 2</p>
+                            <p>Most of the basic UI elements are Material UI. I had not used a design system as a basis for anything previously, so I wanted to try it out. Turns out not having to rethink margins every time you make a new view is pretty useful.</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
@@ -95,8 +93,7 @@ export default class Timetravel extends React.Component {
                             <Thumbnail style='large,center' key={getUniqueKey()} image={TIMETRAVEL.Success} onClick={() => this.pickLightBoxImage(7)}/>
                         </Gallery>
                         <div className={'paragraphContainer'}>
-                            <p><span>Summary: </span>Text 1</p>
-                            <p><span>Success: </span>You did a thing! Look at you!</p>
+                            <p>You did a thing! Look at you!</p>
                         </div>
                     </div>
                     <div className={'workPageContainer'}>
