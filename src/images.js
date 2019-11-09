@@ -7,6 +7,7 @@ import Photo from '../resources/photo.jpg';
 import Inkscape from '../resources/inkscape.png';
 import Procreate from '../resources/procreate.png';
 import LinkedIn from '../resources/linkedin-logo.png';
+import Instagram from '../resources/instagram.png';
 
 import Win95Thumb from '../resources/win95_thumb.png';
 import InhaleThumb from '../resources/inhale_thumb.png';
@@ -77,6 +78,7 @@ export const IMAGES = {
     Inkscape,
     InhaleThumb,
     LinkedIn,
+    Instagram,
     HiQThumb,
     TimetravelThumb,
     OneShotsThumb,

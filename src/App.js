@@ -32,8 +32,11 @@ export default class App extends React.Component {
                         </Switch>
                     </ScrollToTop>
                     <div className={styles.imageContainer}>
-                        <a href="https://www.linkedin.com/in/henri-hosio-871993151/" target="blank">
+                        <a href="https://www.linkedin.com/in/henri-hosio-871993151/" target="blank" className={styles.rightMargin}>
                             <img src={IMAGES.LinkedIn} />
+                        </a>
+                        <a href="https://www.instagram.com/henri_hosio/ " target="blank">
+                            <img src={IMAGES.Instagram} />
                         </a>
                     </div>
                 </div>
