@@ -4,10 +4,10 @@
     "version": "1.0.0",
     "license": "ISC",
     "scripts": {
-        "start-dev": "cross-env NODE_ENV=development npm start",
+        "start-dev": "NODE_ENV=development npm start",
         "bundle": "webpack --config webpack.config.prod.js",
         "clean": "rimraf ./dist",
-        "release": "npm install && npm run clean && npm run bundle && cross-env NODE_ENV=production npm start",
+        "release": "npm install && npm run clean && npm run bundle && NODE_ENV=production npm start",
         "build": "npm run clean && npm run bundle"
     },
     "dependencies": {
